@@ -21,7 +21,7 @@ def main() -> int:
         result = tailor_resume(resume, job, profile)
         print(f"Input tokens: {result.input_tokens}")
         print(f"Output tokens: {result.output_tokens}")
-        print(f"Approximate API cost: ${result.estimated_cost_usd:.4f} USD")
+        print(f"Approximate API cost: ${result.estimated_cost_usd():.4f} USD")
         save_latex(ROOT / "output/tailored_resume.tex", result.latex)
     except (TailoringError, ValueError, OSError) as exc:
         print(f"Error: {exc}", file=sys.stderr)
