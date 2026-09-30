@@ -35,6 +35,11 @@ def tailor_resume(
 ) -> TailoringResult:
     """Generate LaTeX and usage. Caller handles validation and persistence."""
     api_key = os.getenv("ANTHROPIC_API_KEY", "").strip()
+    if not api_key or api_key == "your_key_here":
+        raise TailoringError(
+            "ANTHROPIC_API_KEY is missing or still set to your_key_here. "
+            "Save your real key in the .env file next to main.py (not .env.example)."
+        )
     if not resume.strip() or not job_description.strip():
         raise TailoringError("The base resume and job description must not be empty.")
 
