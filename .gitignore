@@ -5,3 +5,9 @@ pycache/
 .venv/
 venv/
 output/
+
+# Keep personal inputs private; commit only the public templates.
+/input/*
+!/input/resume.example.tex
+!/input/master_profile.example.txt
+!/input/job_description.example.txt

@@ -1,0 +1,10 @@
+Replace these instructions with additional factual candidate information, or leave
+your master_profile.txt empty if you do not need a master profile.
+
+Useful details to include:
+- Additional experiences and projects, with actual roles and dates
+- Technologies and tools you used, and how you used them
+- Verified results and metrics
+- Skills, coursework, and qualifications you actually possess
+
+Do not include aspirational skills or unsupported accomplishments as facts.
